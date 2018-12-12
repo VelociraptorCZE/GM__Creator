@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/)
+/**
+ * GM::Creator
+ * Copyright (C) Simon Raichl 2018
+ * MIT License
+ */
+-->
+<svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <clipPath id="clipPath1408">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect transform="matrix(1.0019 0 0 1.0019 -.007939 -289.08)" x=".15344" y="288.69" width="8.1598" height="8.1598" ry="0" clip-path="url(#clipPath1408)" fill="#969696" stroke="#525553" stroke-linecap="round" stroke-width="1.3229" style="paint-order:stroke fill markers"/>
+ <rect x=".14579" y=".14999" width="8.1751" height="8.1751" fill="none" stroke="#4dda5a" stroke-linecap="round" stroke-width=".29159" style="paint-order:stroke fill markers"/>
+ <g transform="matrix(.95932 0 0 .95932 .18888 .28263)" fill="none" stroke="#008500">
+  <path d="m1.7201 7.6178c0.49899-1.8321 0.9979-3.6639 1.9138-4.6988 0.91588-1.0349 2.249-1.2732 3.5816-1.5114" stroke-width=".79375"/>
+  <path d="m1.0723 6.5232 0.64783 1.0946 1.2063-0.67017" stroke-width=".635"/>
+  <path d="m6.6733 2.485 0.80209-0.98717-1.0469-0.89912" stroke-width=".635"/>
+ </g>
+ <g transform="matrix(-.088464 .95523 -.95523 -.088464 8.4424 .63229)" fill="none" stroke="#008500">
+  <path d="m1.7201 7.6178c0.49899-1.8321 0.9979-3.6639 1.9138-4.6988 0.91588-1.0349 2.249-1.2732 3.5816-1.5114" stroke-width=".79375"/>
+  <path d="m1.0723 6.5232 0.64783 1.0946 1.2063-0.67017" stroke-width=".635"/>
+  <path d="m6.6733 2.485 0.80209-0.98717-1.0469-0.89912" stroke-width=".635"/>
+ </g>
+</svg>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GM::Creator</title>
+    <script src="src/js/Core.js" type="module" async></script>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <button id="js-create">Create</button>
+        <button id="js-config">Config</button>
+        <button id="js-preview">Preview</button>
+    </div>
+    <div class="main">
+        <div id="js-create-container">
+            <div class="sub-container">
+                <!-- Create object container -->
+                <section>
+                    <h3>Objects</h3>
+                    <button
+                            class="normal-button tooltip"
+                            id="js-create-obj"
+                            data-tooltip-text="Toggles a container with a form to create an empty object.">
+
+                        Create an object
+                    </button>
+                    <div id="js-create-obj-container" style="display:none">
+                        <label for="js-obj-name">Name:</label>
+                        <input type="text" id="js-obj-name" placeholder="Object name" value="player"><br>
+
+                        <label for="js-obj-img">Image:</label>
+                        <input type="text" id="js-obj-img" placeholder="Object image source" value="draw->circle,green"><br>
+
+                        <label for="js-obj-width">Width:</label>
+                        <input type="number" id="js-obj-width" placeholder="Object width / radius" value="48"><br>
+
+                        <label for="js-obj-height">Height:</label>
+                        <input type="number" id="js-obj-height" placeholder="Object height" value="48"><br>
+
+                        <button id="js-add-obj" class="normal-button no-bor-radius">Add object</button>
+                    </div>
+                    <hr>
+                </section>
+
+                <!-- Create instance container -->
+                <section class="margin-left-auto">
+                    <h3>Instances</h3>
+                    <button
+                            class="normal-button tooltip"
+                            id="js-create-instance"
+                            data-tooltip-text="Toggles a container with a form to create an instance from an existing object.">
+
+                        Create an instance
+                    </button>
+
+                    <div id="js-create-instance-container" style="display:none">
+                        <select id="js-instance-select" class="js-global-obj-select">
+                            <option disabled selected hidden>Select your object</option>
+                            <option disabled>You haven't declared any objects so far!</option>
+                        </select><br>
+                        <label for="js-instance-x">Instance x:</label>
+                        <input type="number" id="js-instance-x" placeholder="instance x" value="0"><br>
+                        <label for="js-instance-x">Instance y:</label>
+                        <input type="number" id="js-instance-y" placeholder="instance y" value="0"><br>
+                        <button id="js-add-instance" class="normal-button no-bor-radius">Add instance</button>
+                    </div>
+                    <hr>
+                </section>
+
+                <!-- Create instance container -->
+                <section class="stretch-section">
+                    <h3>Edit objects</h3>
+                    <button
+                            class="normal-button tooltip"
+                            id="js-edit-obj"
+                            data-tooltip-text="Toggles a container with a form to edit an existing object.">
+
+                        Edit an object
+                    </button>
+
+                    <div id="js-edit-obj-container" style="display:none">
+                        <select id="js-edit-obj-select" class="js-global-obj-select">
+                            <option disabled selected hidden>Select your object</option>
+                            <option disabled>You haven't declared any objects so far!</option>
+                        </select><br>
+                        <div class="edit-obj-main">
+                            <div class="edit-obj-actions"></div>
+                            <div class="edit-obj-action-list">
+                                <label class="edit-obj-action-list-label">Movement</label>
+                            </div>
+                        </div>
+                        <button id="js-edit-obj-save" class="normal-button no-bor-radius">Save changes</button>
+                    </div>
+                    <hr>
+                </section>
+
+
+                <!-- Miscellaneous -->
+                <section class="stretch-section self-end">
+                    <input type="checkbox" id="js-disable-tooltips"> Disable tooltips
+
+                    <h6>About GM::Creator:</h6>
+                    <p class="info">Version: 0.2 Beta<br>Written in vanilla JS and PHP<br>Simon Raichl &copy; 2018, MIT license</p>
+                </section>
+            </div>
+        </div>
+
+        <div id="js-config-container" style="display:none">
+            <div class="sub-container">
+                <div class="margin-auto">
+                    <label for="js-config-game-name">Name of the game:</label>
+                    <input type="text" id="js-config-game-name" placeholder="Name of the game" value="New game"><br>
+                    <label for="js-config-canvas-width">Canvas width:</label>
+                    <input type="number" id="js-config-canvas-width" placeholder="Canvas width" value="640"><br>
+                    <label for="js-config-canvas-height">Canvas height:</label>
+                    <input type="number" id="js-config-canvas-height" placeholder="Canvas height" value="360"><br>
+                    <button id="js-config-save" class="normal-button">Save config</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="js-preview-container" style="display:none">
+            <div class="sub-container no-flex">
+                <button id="js-game-build" class="normal-button">Build game</button>
+                <a id="js-download-proj"
+                   class="normal-button tooltip"
+                   data-ready="disabled"
+                   data-tooltip-text="You have to build this game before you can download it!">
+
+                Download project as a single HTML</a>
+                <br>
+                <h3>Game canvas:</h3>
+                <canvas id="js-game" width="300" height="150" tabindex="0"></canvas>
+                <br>
+                <h3>Source code:</h3>
+                <textarea id="js-output-code" cols="30" rows="20"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="src/css/app.css">
+<link rel="stylesheet" href="node_modules/alertsjs/css/alerts.css">
+
+</body>
+</html>

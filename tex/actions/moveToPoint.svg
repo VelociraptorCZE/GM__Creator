@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/)
+/**
+ * GM::Creator
+ * Copyright (C) Simon Raichl 2018
+ * MIT License
+ */
+-->
+<svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter1038" x="-.25873" y="-.24334" width="1.5175" height="1.4867" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.63294949"/>
+  </filter>
+  <filter id="filter1077" x="-.42136" y="-.37566" width="1.8427" height="1.7513" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.33595942"/>
+  </filter>
+  <clipPath id="clipPath1388">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+  <clipPath id="clipPath1392">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+  <clipPath id="clipPath1400">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+  <clipPath id="clipPath1404">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+  <clipPath id="clipPath1408">
+   <rect x=".15344" y="288.69" width="8.1598" height="8.1598" fill="#969696" stroke="#fffaff" stroke-linecap="round" stroke-width=".52917" style="paint-order:stroke fill markers"/>
+  </clipPath>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0,-288.53)">
+  <rect transform="matrix(1.0019 0 0 1.0019 -.007939 -.54853)" x=".15344" y="288.69" width="8.1598" height="8.1598" ry="0" clip-path="url(#clipPath1408)" fill="#969696" stroke="#525553" stroke-linecap="round" stroke-width="1.3229" style="paint-order:stroke fill markers"/>
+  <path transform="matrix(1.0019 0 0 1.0019 -.007939 -.54853)" d="m1.7107 296.28c-0.39326-0.68218-0.60126-1.47-0.59599-2.2574 0.00428-0.63902 0.14739-1.2752 0.40243-1.8611 0.29102-0.66861 0.74062-1.2847 1.3572-1.674 0.54102-0.34153 1.2006-0.49438 1.8355-0.41491 0.71775 0.0899 1.3711 0.46194 1.9465 0.90037 0.11205 0.0854 0.22199 0.17356 0.32966 0.26442" clip-path="url(#clipPath1404)" fill="none" stroke="#72ff28" stroke-width="1.0426"/>
+  <path transform="matrix(1.0019 0 0 1.0019 -.007939 -.54853)" d="m6.5206 289.37 0.46547 1.8619-1.9136 0.28445" clip-path="url(#clipPath1400)" fill="none" stroke="#72ff28" stroke-width=".93456"/>
+ </g>
+ <g fill="none">
+  <path transform="matrix(1.0019 0 0 1.0019 -.007939 -289.08)" d="m1.7712 296.35c-0.3892-0.68406-0.5968-1.4704-0.59599-2.2574 6.885e-4 -0.67216 0.15265-1.3441 0.44411-1.9498 0.32291-0.67104 0.82529-1.2656 1.4707-1.637 0.59222-0.34087 1.3059-0.48443 1.9751-0.34618 0.69755 0.1441 1.2924 0.58311 1.8511 1.025l0.069818 0.0552 0.060518 0.0676" clip-path="url(#clipPath1392)" filter="url(#filter1038)" stroke="#72ff28" stroke-width="1.0426"/>
+  <path transform="matrix(1.0019 0 0 1.0019 -.007939 -289.08)" d="m6.5811 289.44 0.46547 1.8619-1.9136 0.28445" clip-path="url(#clipPath1388)" filter="url(#filter1077)" stroke="#72ff28" stroke-width=".93456"/>
+  <rect x=".14579" y=".14999" width="8.1751" height="8.1751" stroke="#4dda5a" stroke-linecap="round" stroke-width=".29159" style="paint-order:stroke fill markers"/>
+ </g>
+</svg>

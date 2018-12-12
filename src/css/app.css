@@ -1,0 +1,269 @@
+/**
+ * GM::Creator
+ * Copyright (C) Simon Raichl 2018
+ * MIT License
+ */
+
+/* GUI */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI Light, sans-serif;
+    font-size: 14px;
+}
+
+input[type=text], select, input[type=number], textarea {
+    margin: .7rem;
+    padding: .4rem;
+    border-radius: 4px;
+    border: 1px solid #a1a1a1;
+}
+
+textarea {
+    resize: vertical;
+    width: calc(100% - 2rem);
+    display: block;
+    font-family: Courier New, sans-serif;
+}
+
+h2, h3, h4, h5, h6, input[type=checkbox], label, p {
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h2, h3 {
+    font-weight: 700;
+    font-family: Segoe UI, sans-serif;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
+canvas {
+    border: 1px solid #a1a1a1;
+    margin: .8rem;
+}
+
+hr {
+    height: 1px;
+    background: #1f93be;
+    border: none;
+    margin: 1rem;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+label {
+    display: inline-block;
+    width: 76px;
+}
+
+/* Layout */
+
+.info {
+    font-size: .8rem;
+}
+
+.main {
+    padding: .8rem;
+}
+
+.sub-container {
+    padding: .4rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.sub-container > section {
+    width: 100%;
+}
+
+.sub-container > section:not(.stretch-section) {
+    width: 48%;
+}
+
+.sub-container.no-flex {
+    display: block;
+}
+
+.container {
+    box-shadow: 2px 2px 4px rgba(140, 209, 236, .5);
+    overflow: hidden;
+    background: #fafefe;
+    min-height: calc(100vh - 1.5rem);
+}
+
+.nav {
+    display: flex;
+    background: #64c1e6;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-left-1 {
+    margin-left: 1rem;
+}
+
+.edit-obj-main {
+    display: flex;
+    margin: auto;
+    width: 35vw;
+    height: fit-content;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 2px 2px 4px #a1a1a1;
+}
+
+.edit-obj-action {
+    cursor: pointer;
+    display: flex;
+    padding: 8px;
+    border-bottom: 1px dashed #777;
+    background: #f4f4f4;
+    position: relative;
+}
+
+.edit-obj-action-remove {
+    position: absolute;
+    right: 16px;
+    top: calc(50% - 11px);
+    background: #b5282c;
+    color: #fff;
+    padding: 4px;
+    margin: auto;
+    text-align: center;
+    width: 11px;
+    transform: scaleX(1.3);
+    font-weight: 700;
+    border-radius: 50%;
+    height: 16px;
+    line-height: 13px;
+    transition: .2s;
+}
+
+.edit-obj-action-remove:hover {
+    background: #70181b;
+}
+
+.edit-obj-actions {
+    border: 1px solid #a1a1a1;
+    width: calc(100% - 138px);
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.edit-obj-actions > .edit-obj-action:last-child {
+    border: none;
+}
+
+.edit-obj-action-list {
+    background: #dadada;
+    margin-left: auto;
+    width: calc(138px + .2rem);
+    overflow: auto;
+}
+
+.edit-obj-action-list > .action-item {
+    cursor: pointer;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: .5rem;
+    box-shadow: 1px 1px 2px #777;
+}
+
+.edit-obj-action-list > .action-item > img {
+    width: 100%;
+    height: 100%;
+}
+
+.edit-obj-action-list-label {
+    width: calc(100% - 1rem);
+    margin: .5rem;
+}
+
+/* Buttons */
+
+.nav button, .normal-button {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    color: #fff;
+    background: #2199c7;
+    transition: .4s;
+    cursor: pointer;
+    border-bottom: 2px solid #177091;
+}
+
+.nav button:hover, .normal-button:hover {
+    background: #1f93be;
+}
+
+.nav button:active, .normal-button:active, .active-nav-button {
+    background: #14627e !important;
+}
+
+.normal-button {
+    padding: .7rem;
+    margin: .3rem .8rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.no-bor-radius {
+    border-radius: 0 !important;
+}
+
+[data-ready=disabled], [data-ready=disabled]:hover, [data-ready=disabled]:active  {
+    background: #1a1a1a !important;
+    cursor: not-allowed !important;
+}
+
+/* TOOLTIP */
+
+.tooltip:not(.disable-tooltip):hover::after {
+    content: attr(data-tooltip-text);
+    z-index: 1000;
+    padding: 16px;
+    border-radius: 4px;
+    color: #14627e;
+    background: #fff;
+    position: absolute;
+    box-shadow: 2px 2px 5px #14627e;
+}
+
+@media only screen and (max-width: 1000px) {
+    .edit-obj-main {
+        width: calc(100vw - 128px);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .sub-container > section {
+        width: 100% !important;
+    }
+}
